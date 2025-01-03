@@ -115,27 +115,21 @@ const CountriesDropdown = () => {
           </select>
         </div>
       </div>
-
       {selectedCountry && selectedState && selectedCity && (
-        <div style={{ 
-          display: 'flex', 
-          flexDirection: 'row', 
-          justifyContent: 'center', 
-          alignItems: 'baseline', 
-          marginTop: '20px', 
-          fontFamily: 'Arial' 
-        }}>
-          <div style={{ marginRight: '10px' }}>
-            <h1>You selected</h1>
-          </div>
-          <div style={{ marginRight: '10px' }}> 
-            <h1>{selectedCity},</h1>
-          </div>
-          <div> 
-            <p style={{ color: 'gray', fontWeight: 'bold' }}>{`${selectedState}, ${selectedCountry}`}</p>
-          </div>
-        </div>
-      )}
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          marginTop: '20px',
+          fontFamily: 'Arial' }}>
+          <p style={{
+          color: 'gray',
+          fontWeight: 'bold',
+          display: 'flex',
+          alignItems: 'baseline' }}>You selected <h2 style={{
+          color: 'black',
+          margin: '0 10px' }}>{selectedCity}, </h2>
+          {`${selectedState}, ${selectedCountry}`} </p>
+           </div> )}
     </div>
   );
 };
