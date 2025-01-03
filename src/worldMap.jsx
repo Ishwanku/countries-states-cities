@@ -83,7 +83,7 @@ const CountriesDropdown = () => {
       </div>
       <div style={{ display: 'flex' }}>
         <div style={{ padding: '10px' }}>
-          <select style={{ padding: '10px' }} id="dropdown" value={selectedCountry} onChange={handleCountryChange}>
+          <select style={{ padding: '10px' }} id="country-dropdown" value={selectedCountry} onChange={handleCountryChange}>
             <option value="">Select a Country</option>
             {countries.map((countryName, index) => (
               <option key={index} value={countryName}>
@@ -94,7 +94,7 @@ const CountriesDropdown = () => {
         </div>
 
         <div style={{ padding: '10px' }}>
-          <select style={{ padding: '10px' }} id="dropdown" value={selectedState} onChange={handleStateChange}>
+          <select style={{ padding: '10px' }} id="state-dropdown" value={selectedState} onChange={handleStateChange}>
             <option value="">Select a State</option>
             {states.map((stateName, index) => (
               <option key={index} value={stateName}>
@@ -105,7 +105,7 @@ const CountriesDropdown = () => {
         </div>
 
         <div style={{ padding: '10px' }}>
-          <select style={{ padding: '10px' }} id="dropdown" value={selectedCity} onChange={handleCityChange}>
+          <select style={{ padding: '10px' }} id="city-dropdown" value={selectedCity} onChange={handleCityChange}>
             <option value="">Select a City</option>
             {cities.map((cityName, index) => (
               <option key={index} value={cityName}>
